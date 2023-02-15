@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DF2318E-8378-4BC0-8B0B-9A814950B21D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminClients.Designer.cs">
+      <DependentUpon>frmAdminClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminEmployees.Designer.cs">
+      <DependentUpon>frmAdminEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAdminHouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminHouses.Designer.cs">
+      <DependentUpon>frmAdminHouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmAgent.Designer.cs">
+      <DependentUpon>frmAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmAgentClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmAgentClient.Designer.cs">
+      <DependentUpon>frmAgentClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmAgentHouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmAgentHouses.Designer.cs">
+      <DependentUpon>frmAgentHouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\clsAgent.cs" />
+    <Compile Include="Class\clsBranche.cs" />
+    <Compile Include="Class\clsClientBuyer.cs" />
+    <Compile Include="Class\clsClientSeller.cs" />
+    <Compile Include="Class\clsDatasource.cs" />
+    <Compile Include="Class\clsHouse.cs" />
+    <Compile Include="Class\clsListAgent.cs" />
+    <Compile Include="Class\clsListClientBuyer.cs" />
+    <Compile Include="Class\clsListClientSeller.cs" />
+    <Compile Include="Class\clsListHouse.cs" />
+    <Compile Include="Class\clsListManager.cs" />
+    <Compile Include="Class\clsManager.cs" />
+    <Compile Include="DataSource\clsGlobal.cs" />
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\frmGuestEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\frmGuestEmployee.Designer.cs">
+      <DependentUpon>frmGuestEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\frmGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\frmGuest.Designer.cs">
+      <DependentUpon>frmGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guest\frmGuestHouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guest\frmGuestHouses.Designer.cs">
+      <DependentUpon>frmGuestHouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminClients.resx">
+      <DependentUpon>frmAdminClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminEmployees.resx">
+      <DependentUpon>frmAdminEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAdminHouses.resx">
+      <DependentUpon>frmAdminHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmAgent.resx">
+      <DependentUpon>frmAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmAgentClient.resx">
+      <DependentUpon>frmAgentClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmAgentHouses.resx">
+      <DependentUpon>frmAgentHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\frmGuest.resx">
+      <DependentUpon>frmGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\frmGuestEmployee.resx">
+      <DependentUpon>frmGuestEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guest\frmGuestHouses.resx">
+      <DependentUpon>frmGuestHouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
